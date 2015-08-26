@@ -22,6 +22,7 @@
     JMChartView *chartView = [[JMChartView alloc] initWithJMChartDataFrame:CGRectMake(0, 100, self.view.bounds.size.width, 200) withSource:self withStyle:JMLineChartViewStyle];
     [self.view addSubview:chartView];
     [chartView strokeChart];
+    
 }
 
 - (NSString *)chartViewUnitInLineChart:(JMChartView *)chartView
