@@ -1,14 +1,24 @@
-# JMChartView
+//
+//  ViewController.m
+//  JMChartViewExample
+//
+//  Created by chengjiaming on 15/8/26.
+//  Copyright (c) 2015年 chengjiaming. All rights reserved.
+//
 
-由于工作需要写了一个折线图，主要是通过几个代理函数导入数据就可实现折线图的效果。
+#import "ViewController.h"
+#import "JMChartView.h"
+#import "JMColor.h"
 
-下面是简单的使用说明，如需使用，请告知原作者，谢谢！
+@interface ViewController () <JMChartViewDataSource>
 
-作者邮箱：chengjiaming@live.com
+@end
+
+@implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-   
+    
     JMChartView *chartView = [[JMChartView alloc] initWithJMChartDataFrame:CGRectMake(0, 100, self.view.bounds.size.width, 200) withSource:self withStyle:JMLineChartViewStyle];
     [self.view addSubview:chartView];
     [chartView strokeChart];
@@ -47,7 +57,8 @@
 
 - (NSString *)chartViewNameInLineChart:(JMChartView *)chartView
 {
-    return @"淋巴细胞百分比";
+    NSString *sadf = @"淋巴细胞百分比";
+    return sadf;
 }
 
 - (NSArray *)chartView_rulingInLineChart:(JMChartView *)chartView
@@ -56,3 +67,6 @@
     
     return array;
 }
+
+
+@end

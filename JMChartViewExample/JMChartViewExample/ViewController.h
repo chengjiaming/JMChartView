@@ -1,6 +1,6 @@
 //
 //  ViewController.h
-//  JMChartViewDemo
+//  JMChartViewExample
 //
 //  Created by chengjiaming on 15/8/26.
 //  Copyright (c) 2015年 chengjiaming. All rights reserved.
