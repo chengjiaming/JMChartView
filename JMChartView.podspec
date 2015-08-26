@@ -8,5 +8,5 @@ s.license                = "MIT"
 s.author                 = {"chengjiaming" => "1072670694@qq.com"}
 s.source                 = {:git => "https://github.com/chengjiaming/JMChartView.git", :tag => s.version}
 s.requires_arc           = true
-s.source_files           = "JMChartView"
+s.source_files           = "JMChartView/*"
 end
